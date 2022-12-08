@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding:0;
+    list-style-type: none;
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html, body{
+  width: 100%;
+  height: 100%;
+}
+
+article{
+  min-height: 100%;
+  display: grid;
+  grid-template-rows:auto 1fr auto;
+  grid-template-columns: 100%;
+
+}
+
+header{
+    background-color: #ef4738;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 40px;
+}
+
+#title{
+    margin: 2rem;
+}
+
+nav{
+    width: 100%;
+}
+
+#header__links{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    gap: 100px;
+    color: white;
+}
+
+#header__links li a{
+    color: white;
+}
+
+.vegg_option, .meat_option, .size_option {
+    background-color: white;
+    border: 1px solid #666;
+    color: #000;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    margin: 15px;
+  }
+  .vegg_option:hover, .meat_option:hover, .size_option:hover {
+    background-color: lavender;
+  }
+
+  li:has(input[type=checkbox]:checked),  li:has(input[type=radio]:checked) {
+    outline: 2px solid green;
+  }
+
+  input[type=checkbox], input[type=radio]{
+    display: none;
+  }
+
+  label{
+    cursor: pointer;
+    padding: 10px;
+    width: 150px;
+  }
+
+  #finish_order, #reset_order, #add_pizza{
+    width: 10rem;
+    height: 2rem;
+  }
+
+  #add_pizza{
+    display: grid;
+    margin: 5px;
+    align-self: center;
+    text-align: center;
+  }
+
+  #buttons{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  main{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  #main{
+    background-color: lightgrey;
+    border: 1px solid black;
+    width: 85%;
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+  }
+
+  form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    border: 1px solid black;
+  }
+
+  #recent_orders{
+    margin: auto;
+    width: 85%;
+    margin-bottom: 15px;
+  }
+  #recent_orders li{
+    background-color: lightgrey;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    
+    
+    margin-top: 15px;
+  }
+
+
+  #order_label{
+    margin-right: 6px;
+  }
+
+  #recent_orders li li{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    margin-top: 0;
+  }
+  
+
+  #order{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+
+  #order_list{
+    margin-left: 10px;
+  }
+
+  #cost{
+    border-top: 1px solid black;
+    justify-self: flex-end;
+    font-weight: 800;
+  }
+
+  
+ footer{
+    color: white;
+    clear: both;
+    background-color:#666;
+    height: 100px;
+    width: 100%;
+    margin-top:auto;
+  }
