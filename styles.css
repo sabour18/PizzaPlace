@@ -94,6 +94,11 @@ nav{
     margin-right: auto;
   }
 
+  #size_list{
+    display: flex;
+    margin-bottom: 15px;
+  }
+
   main{
     width: 85%;
     display: flex;
