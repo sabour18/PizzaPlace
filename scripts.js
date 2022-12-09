@@ -50,7 +50,6 @@ function retrieve(){
         li.appendChild(h3);
         li.appendChild(el);
 
-
         document.getElementById("recent_orders").appendChild(li);
     }
 }

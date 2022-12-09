@@ -51,8 +51,9 @@ nav{
 }
 
 .vegg_option, .meat_option, .size_option {
-    background-color: white;
-    border: 1px solid #666;
+    background-color:snow;
+    border-radius: 3px;
+    border: 2px groove #666;
     color: #000;
     text-align: center;
     display: inline-block;
@@ -65,6 +66,7 @@ nav{
 
   li:has(input[type=checkbox]:checked),  li:has(input[type=radio]:checked) {
     outline: 2px solid green;
+    background-color: lavender;
   }
 
   input[type=checkbox], input[type=radio]{
@@ -99,6 +101,12 @@ nav{
     margin-bottom: 15px;
   }
 
+  .size_option{
+    width: fit-content;
+    font-size: 15px;
+    margin: 5px;
+  }
+
   main{
     width: 85%;
     display: flex;
@@ -109,7 +117,7 @@ nav{
   #main{
     background: rgb(223,188,188);
     background: linear-gradient(0deg, rgba(223,188,188,1) 0%, rgba(228,228,228,1) 94%);
-    border: 1px solid black;
+    border:grey groove 1px; 
     box-shadow: 12px 10px 11px -4px rgba(0,0,0,0.75);
     -webkit-box-shadow: 12px 10px 11px -4px rgba(0,0,0,0.75);
     -moz-box-shadow: 12px 10px 11px -4px rgba(0,0,0,0.75);
@@ -132,16 +140,15 @@ nav{
     margin: auto;
     width: 85%;
     margin-bottom: 15px;
-    box-shadow: 0px 14px 9px -11px rgba(0,0,0,0.75);
--webkit-box-shadow: 0px 14px 9px -11px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 14px 9px -11px rgba(0,0,0,0.75);
   }
 
   #recent_orders li{
     background-color: lightgrey;    
-    border: 1px solid black;
+    border:grey ridge 1px; 
     display: flex;
     flex-direction: row;
+    padding: 1px;
+    border-radius: 5px;
     margin-top: 15px;
   }
 
