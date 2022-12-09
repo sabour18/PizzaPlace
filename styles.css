@@ -102,8 +102,14 @@ nav{
   }
 
   #main{
-    background-color: lightgrey;
+    background: rgb(223,188,188);
+    background: linear-gradient(0deg, rgba(223,188,188,1) 0%, rgba(228,228,228,1) 94%);
     border: 1px solid black;
+    box-shadow: 12px 10px 11px -4px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 12px 10px 11px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 12px 10px 11px -4px rgba(0,0,0,0.75);
+    padding: 3px;
+    border-radius: 8px;
     width: 85%;
     display: flex;
     margin: auto;
@@ -114,7 +120,7 @@ nav{
     display: flex;
     flex-direction: column;
     width: 80%;
-    border: 1px solid black;
+    border-right: 1px solid black;
   }
 
   #recent_orders{
