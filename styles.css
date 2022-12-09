@@ -127,15 +127,22 @@ nav{
     margin: auto;
     width: 85%;
     margin-bottom: 15px;
+    box-shadow: 0px 14px 9px -11px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 14px 9px -11px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 14px 9px -11px rgba(0,0,0,0.75);
   }
+
   #recent_orders li{
-    background-color: lightgrey;
+    background-color: lightgrey;    
     border: 1px solid black;
     display: flex;
     flex-direction: row;
-    
-    
     margin-top: 15px;
+  }
+
+  #recent_title{
+    margin-top: 20px;
+    margin-left: 8%;
   }
 
 
