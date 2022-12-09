@@ -57,16 +57,28 @@ function retrieve(){
 
 
 function saveOrder(){
-    if(localStorage.getItem("nums") == undefined){
-        localStorage.setItem("nums", 1);
+    let list = document.getElementById("order_list").getElementsByTagName("li");
+    let isOrder = false;
+
+    
+    if(list.length > 0){
+        isOrder = true;
     }
 
-    let numOrders = localStorage.getItem("nums");
-    let order = document.getElementById("order_list");
-    localStorage.setItem("Order " + numOrders, order.innerHTML);
+    if(isOrder){
+        if(localStorage.getItem("nums") == undefined){
+            localStorage.setItem("nums", 1);
+        }
 
-    numOrders = Number(numOrders) + 1;
-    localStorage.setItem("nums", numOrders);
+        let numOrders = localStorage.getItem("nums");
+        let order = document.getElementById("order_list");
+        localStorage.setItem("Order " + numOrders, order.innerHTML);
+
+        numOrders = Number(numOrders) + 1;
+        localStorage.setItem("nums", numOrders);
+    }else{
+        preventDefault();
+    }
 }
 
 function formatCurrency(num) {
@@ -94,6 +106,7 @@ function load(){
     document.getElementById("order_form").addEventListener("submit", function(){
         saveOrder();
     });
+
     retrieve();
     document.getElementById("reset_order").addEventListener("click", function(){
         resetOrder();
