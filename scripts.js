@@ -91,9 +91,9 @@ function formatCurrency(num) {
 }
 
 function load(){
-    //document.getElementById("order_form").addEventListener("submit", function(){
-        //saveOrder();
-    //});
+    document.getElementById("order_form").addEventListener("submit", function(){
+        saveOrder();
+    });
     retrieve();
     document.getElementById("reset_order").addEventListener("click", function(){
         resetOrder();
