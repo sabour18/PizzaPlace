@@ -60,6 +60,11 @@ nav{
     font-size: 20px;
     margin: 15px;
   }
+
+  .size_option{
+    margin: 5px;
+    font-size: 15px;
+  }
   .vegg_option:hover, .meat_option:hover, .size_option:hover {
     background-color: lavender;
   }
@@ -94,17 +99,6 @@ nav{
   #buttons{
     margin-left: auto;
     margin-right: auto;
-  }
-
-  #size_list{
-    display: flex;
-    margin-bottom: 15px;
-  }
-
-  .size_option{
-    width: fit-content;
-    font-size: 15px;
-    margin: 5px;
   }
 
   main{
