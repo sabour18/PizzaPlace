@@ -3,16 +3,31 @@ let orderTotal = 0;
 function addPizza(size){
     console.log(size);
     let list = document.getElementById("order_list");
-    let newPizza = document.createElement("li");
+    let li = document.createElement("li");
+
+    let label = document.createElement("label");
+    label.innerHTML = size;
+    label.setAttribute("id" , "pizza_label");
+
     let cost = document.getElementById("cost");
 
-    newPizza.innerHTML = size;
- 
-    list.appendChild(newPizza);
+    let button = document.createElement("button");
+    button.setAttribute("id", "del_pizza");
+    button.setAttribute("onclick", "deletePizza(this)")
+    button.innerHTML = "x";
+
+    li.appendChild(button);
+    li.innerHTML += "&nbsp;&nbsp;&nbsp;&nbsp;";
+    li.appendChild(label);
+    list.appendChild(li);
 
     orderTotal += checkCost(size);
 
     cost.innerHTML = formatCurrency(orderTotal);
+}
+
+function deletePizza(li){
+    li.parentElement.remove();
 }
 
 function checkCost(size){
@@ -70,7 +85,7 @@ function saveOrder(){
         }
 
         let numOrders = localStorage.getItem("nums");
-        let order = document.getElementById("order_list");
+        let order = document.getElementsById("order_list");
         localStorage.setItem("Order " + numOrders, order.innerHTML);
 
         numOrders = Number(numOrders) + 1;

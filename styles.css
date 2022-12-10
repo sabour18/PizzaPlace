@@ -182,11 +182,21 @@ nav{
   }
 
   
- footer{
+footer{
     color: white;
     clear: both;
     background-color:#666;
     height: 100px;
     width: 100%;
     margin-top:auto;
+  }
+
+  #del_pizza{
+    background-color: transparent;
+    border: none;
+  }
+
+  #del_pizza:hover{
+    color: red;
+    cursor: pointer;
   }
