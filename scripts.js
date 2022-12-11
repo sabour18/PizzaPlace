@@ -5,9 +5,9 @@ function addPizza(size){
     let list = document.getElementById("order_list");
     let li = document.createElement("li");
 
-    let label = document.createElement("label");
-    label.innerHTML = size;
-    label.setAttribute("id" , "pizza_label");
+    let pLi = document.createElement("pLi");
+    pLi.innerHTML = size;
+    pLi.setAttribute("class" , "pizza_label");
 
     let cost = document.getElementById("cost");
 
@@ -18,7 +18,7 @@ function addPizza(size){
 
     li.appendChild(button);
     li.innerHTML += "&nbsp;&nbsp;&nbsp;&nbsp;";
-    li.appendChild(label);
+    li.appendChild(pLi);
     list.appendChild(li);
 
     orderTotal += checkCost(size);
@@ -53,19 +53,26 @@ function resetOrder(){
 
 function retrieve(){
     for(let i = 1; i<localStorage.length; i++){
-        let li = document.createElement("li");
-        let h3 = document.createElement("h3");
-        h3.setAttribute("id","order_label");
-
-        let el = document.createElement("li");
-        el.innerHTML = localStorage.getItem("Order " + i);
-
-        h3.innerHTML = "Order " + i + " - ";
+        let div = document.createElement("div");
+        div.setAttribute("class","order_label");
         
-        li.appendChild(h3);
-        li.appendChild(el);
+        let h3 = document.createElement("h3");
+        let title = "Order " + i;
+        h3.innerHTML = title + " - ";
+        div.appendChild(h3);
 
-        document.getElementById("recent_orders").appendChild(li);
+        let ul = document.createElement("ul");
+
+        let n = JSON.parse(localStorage.getItem(title));
+
+        for(let j = 0; j < n.length; j++){
+            let li = document.createElement("li");
+            li.innerHTML = n[j];
+            ul.appendChild(li);
+        }
+
+        div.appendChild(ul);
+        document.getElementById("recent_orders").appendChild(div);
     }
 }
 
@@ -85,8 +92,14 @@ function saveOrder(){
         }
 
         let numOrders = localStorage.getItem("nums");
-        let order = document.getElementsById("order_list");
-        localStorage.setItem("Order " + numOrders, order.innerHTML);
+        let order = document.getElementsByClassName("pizza_label");
+
+        let arr = Array(order.length);
+        for(let i = 0; i < order.length; i++){
+            arr[i] = order[i].innerHTML;
+        }
+
+        localStorage.setItem("Order " + numOrders, JSON.stringify(arr));
 
         numOrders = Number(numOrders) + 1;
         localStorage.setItem("nums", numOrders);
