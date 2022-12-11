@@ -1,7 +1,6 @@
 let orderTotal = 0;
 
 function addPizza(size){
-    console.log(size);
     let list = document.getElementById("order_list");
     let li = document.createElement("li");
 
@@ -27,6 +26,12 @@ function addPizza(size){
 }
 
 function deletePizza(li){
+    let cost = document.getElementById("cost");
+    console.log(li.parentElement.lastChild.innerHTML);
+
+    orderTotal -= checkCost(li.parentElement.lastChild.innerHTML);
+    cost.innerHTML = formatCurrency(orderTotal);
+
     li.parentElement.remove();
 }
 
