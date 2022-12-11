@@ -201,3 +201,28 @@ footer{
     color: red;
     cursor: pointer;
   }
+
+  #menu{
+    background: rgb(223,188,188);
+    background: linear-gradient(0deg, rgba(223,188,188,1) 0%, rgba(228,228,228,1) 94%);
+    border:grey groove 1px; 
+    box-shadow: 12px 10px 11px -4px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 12px 10px 11px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 12px 10px 11px -4px rgba(0,0,0,0.75);padding: 3px;
+    border-radius: 8px;
+    width: 85%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: fit-content;
+  }
+
+  #menu h2{
+    width: 100%;
+    margin-left: 20px;
+  }
+
+  #menu_pizza{
+    text-align: center;
+    margin: auto;
+  }
