@@ -39,7 +39,34 @@
         </div>
         <span id="main">   
         <form id="order_form">
-            <h2 id="step-one">Step 1: Choose Toppings</h2>
+            <h2 id="step-one">Step 1: Choose Size</h2>
+                <div id="sizes">
+                    <h3 id="title-sizes">Sizes:</h3>
+                    <ul id="size_list">
+                        <li class="size_option">
+                            <input type="radio" id="x-small" name="size" value="x-Small">
+                            <label for="x-small">x-small</label>
+                        </li>
+                        <li class="size_option">
+                            <input type="radio" id="small" name="size" value="Small">
+                            <label for="small">small</label>
+                        </li>
+                        <li class="size_option">
+                            <input type="radio" id="medium" name="size" value="Medium">
+                            <label for="medium">Medium</label>
+                        </li>
+                        <li class="size_option">
+                            <input type="radio" id="large" name="size" value="Large">
+                            <label for="large">Large</label>
+                        </li>
+                        <li class="size_option">
+                            <input type="radio" id="x-large" name="size" value="x-Large">
+                            <label for="x-large">X-Large</label>
+                        </li>     
+                    </ul>
+                </div>
+                <hr style="width: 90%; margin: 10px auto 10px auto;">
+            <h2 id="step-two">Step 2: Choose Toppings</h2>
                 <div id="meats">
                     <h3 id="title-meat">Meats:</h3>
                     <ul>
@@ -87,32 +114,8 @@
                         </li>
                     </ul>
                 </div>
-                <h2 id="step-two">Step 2: Choose Size</h2>
-                <div id="sizes">
-                    <h3 id="title-sizes">Sizes:</h3>
-                    <ul id="size_list">
-                        <li class="size_option">
-                            <input type="radio" id="x-small" name="size" value="x-Small">
-                            <label for="x-small">x-small</label>
-                        </li>
-                        <li class="size_option">
-                            <input type="radio" id="small" name="size" value="Small">
-                            <label for="small">small</label>
-                        </li>
-                        <li class="size_option">
-                            <input type="radio" id="medium" name="size" value="Medium">
-                            <label for="medium">Medium</label>
-                        </li>
-                        <li class="size_option">
-                            <input type="radio" id="large" name="size" value="Large">
-                            <label for="large">Large</label>
-                        </li>
-                        <li class="size_option">
-                            <input type="radio" id="x-large" name="size" value="x-Large">
-                            <label for="x-large">X-Large</label>
-                        </li>     
-                    </ul>
-                </div>
+                <hr style="width: 90%; margin: 10px auto 10px auto;">
+                
                 <input id="add_pizza" type="reset" value="Add Pizza">
                 <div id="buttons">
                     <input id="reset_order" type="reset" value="Reset Order">
