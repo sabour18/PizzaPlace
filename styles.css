@@ -31,11 +31,14 @@ header{
 }
 
 #step-one, #step-two{
+  margin-left: 10px;
+  margin-top: 10px;
   text-decoration: underline;
   font-size: 1.1rem;
 }
 
 #title-meat, #title-veggie, #title-sizes{
+  margin-left: 10px;
   margin-top: 10px;
   font-size: 1rem;
 }
@@ -61,21 +64,17 @@ nav{
     color: white;
 }
 
-.vegg_option, .meat_option, .size_option {
+.vegg_option, .meat_option, .size_option{
     background-color:snow;
     border-radius: 3px;
     border: 2px groove #666;
     color: #000;
     text-align: center;
     display: inline-block;
-    font-size: 20px;
-    margin: 15px;
+    font-size: 1rem;
+    margin: 15px 5px 10px 15px;
   }
 
-  .size_option{
-    margin: 5px;
-    font-size: 15px;
-  }
   .vegg_option:hover, .meat_option:hover, .size_option:hover {
     background-color: lavender;
   }
