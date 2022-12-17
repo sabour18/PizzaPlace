@@ -30,6 +30,16 @@ header{
     font-size: 40px;
 }
 
+#step-one, #step-two{
+  text-decoration: underline;
+  font-size: 1.1rem;
+}
+
+#title-meat, #title-veggie, #title-sizes{
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
 #title{
     margin: 2rem;
 }
