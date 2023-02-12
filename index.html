@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,153 +10,164 @@
     <script src="scripts.js"></script>
     <title>Pizza Place</title>
 </head>
+
 <body>
     <article>
-    <header>
-        <h1 id="title">PIZZA PLACE</h1>
-        <nav>
-            <ul id="header__links">
-                <li><a href="#">ORDER ONLINE</a></li>
-                <li><a href="#">MENU</a></li>
-                <li><a href="#">SPECIALS</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div id="menu">
-            <h2 >Menu: more coming soon...</h2>
-            <ul>
-                <li id="menu_pizza">
-                    <h3>Pizzas</h3>
-                    <ul>
-                        <li>x-Small&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;$4.99</li>
-                        <li>Small&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;$6.99</li>
-                        <li>Medium&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;$8.99</li>
-                        <li>Large&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;$10.99</li>
-                        <li>x-Large&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;$12.99</li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <span id="main">   
-        <form id="order_form">
-            <h2 id="step-one">Step 1: Choose Size</h2>
-                <div id="sizes">
-                    <h3 id="title-sizes">Sizes:</h3>
-                    <ul id="size_list">
-                        <li class="size_option">
-                            <input type="radio" id="x-small" name="size" value="x-Small">
-                            <label for="x-small">x-small</label>
-                        </li>
-                        <li class="size_option">
-                            <input type="radio" id="small" name="size" value="Small">
-                            <label for="small">small</label>
-                        </li>
-                        <li class="size_option">
-                            <input type="radio" id="medium" name="size" value="Medium">
-                            <label for="medium">Medium</label>
-                        </li>
-                        <li class="size_option">
-                            <input type="radio" id="large" name="size" value="Large">
-                            <label for="large">Large</label>
-                        </li>
-                        <li class="size_option">
-                            <input type="radio" id="x-large" name="size" value="x-Large">
-                            <label for="x-large">X-Large</label>
-                        </li>     
-                    </ul>
-                </div>
-                <hr style="width: 90%; margin: 10px auto 10px auto;">
-            <h2 id="step-two">Step 2: Choose Toppings</h2>
-                <div id="meats">
-                    <h3 id="title-meat">Meats:</h3>
-                    <ul>
-                        <li class="meat_option">
-                            <input type="checkbox" id="pepperoni" name="meats" value="pepperoni">
-                            <label for="pepperoni">Pepperoni</label>
-                        </li>
-                        <li class="meat_option">
-                            <input type="checkbox" id="ham" name="meats" value="ham">
-                            <label for="ham">Ham</label>
-                        </li>
-                        <li class="meat_option">
-                            <input type="checkbox" id="bacon" name="meats" value="bacon">
-                            <label for="bacon">Bacon</label>
-                        </li>
-                        <li class="meat_option">
-                            <input type="checkbox" id="sausage" name="meats" value="sausage">
-                            <label for="sausage">Sausage</label>
-                        </li>
-                        <li class="meat_option">
-                            <input type="checkbox" id="chicken" name="meats" value="chicken">
-                            <label for="chicken">Chicken</label>
-                        </li>
-                    </ul>
-                </div>
-                <div id="veggies">
-                    <h3 id="title-veggie">Vegatables:</h3>
-                    <ul>
-                        <li class="vegg_option">
-                            <input type="checkbox" id="mushrooms" name="veggies" value="mushrooms">
-                            <label for="mushrooms">Mushrooms</label>
-                        </li>
-                        <li class="vegg_option">
-                            <input type="checkbox" id="onion" name="veggies" value="onion">
-                            <label for="onion">Onions</label>
-                        </li>
-                        <li class="vegg_option">
-                            <input type="checkbox" id="spinach" name="veggies" value="spinach">
-                            <label for="spinach">Spinach</label>
-                        </li>
-                        <li class="vegg_option">
-                                <input type="checkbox" id="pineapple" name="veggies" value="pineapple">
-                                <label for="pineapple">Pineapple</label>
-                            </label>
-                        </li>
-                    </ul>
-                </div>
-                <hr style="width: 90%; margin: 10px auto 10px auto;">
-                <h2 id="step-three">Step 3: Special Instructions</h2>
-                <textarea id="special-instructions" name="instructions" placeholder="Type any Special Instructions here:"></textarea>
-                
-                <input id="add_pizza" type="reset" value="Add Pizza">
-                <div id="buttons">
-                    <input id="reset_order" type="reset" value="Reset Order">
-                    <input id="finish_order" type="submit" value="Finish Order">
-                </div>
-        </form>
-        <div id="order">
-            <span>
-                <h3>Order:</h3>
-                <ul id="order_list">
+        <header>
+            <h1 id="title">PIZZA PLACE</h1>
+            <nav>
+                <ul id="header__links">
+                    <li><a href="#">ORDER ONLINE</a></li>
+                    <li><a href="#">MENU</a></li>
+                    <li><a href="#">SPECIALS</a></li>
                 </ul>
-            </span>
-            <span id="cost">
-                0
-            </span>
-        </div>
-    </span>  
-    <h2 id="recent_title">Recent Orders</h2>
-    <div id="recent_orders">
+            </nav>
+        </header>
+        <main>
+            <div id="menu">
+                <h2>Menu: more coming soon...</h2>
+                <ul>
+                    <li id="menu_pizza">
+                        <h3>Pizzas</h3>
+                        <ul>
+                            <li>x-Small&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;$4.99</li>
+                            <li>Small&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;$6.99</li>
+                            <li>Medium&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;$8.99</li>
+                            <li>Large&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;$10.99</li>
+                            <li>x-Large&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;$12.99</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="main">
+                <div id="selection-menu">
+                    <form id="order_form">
+                        <h2 id="step-one">Step 1: Choose Size</h2>
+                        <div id="sizes">
+                            <h3 id="title-sizes">Sizes:</h3>
+                            <ul id="size_list">
+                                <li class="size_option">
+                                    <input type="radio" id="x-small" name="size" value="x-Small">
+                                    <label for="x-small">x-small</label>
+                                </li>
+                                <li class="size_option">
+                                    <input type="radio" id="small" name="size" value="Small">
+                                    <label for="small">small</label>
+                                </li>
+                                <li class="size_option">
+                                    <input type="radio" id="medium" name="size" value="Medium">
+                                    <label for="medium">Medium</label>
+                                </li>
+                                <li class="size_option">
+                                    <input type="radio" id="large" name="size" value="Large">
+                                    <label for="large">Large</label>
+                                </li>
+                                <li class="size_option">
+                                    <input type="radio" id="x-large" name="size" value="x-Large">
+                                    <label for="x-large">X-Large</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr style="width: 90%; margin: 10px auto 10px auto;">
+                        <h2 id="step-two">Step 2: Choose Toppings</h2>
+                        <div id="meats">
+                            <h3 id="title-meat">Meats:</h3>
+                            <ul>
+                                <li class="meat_option">
+                                    <input type="checkbox" id="pepperoni" name="meats" value="pepperoni">
+                                    <label for="pepperoni">Pepperoni</label>
+                                </li>
+                                <li class="meat_option">
+                                    <input type="checkbox" id="ham" name="meats" value="ham">
+                                    <label for="ham">Ham</label>
+                                </li>
+                                <li class="meat_option">
+                                    <input type="checkbox" id="bacon" name="meats" value="bacon">
+                                    <label for="bacon">Bacon</label>
+                                </li>
+                                <li class="meat_option">
+                                    <input type="checkbox" id="sausage" name="meats" value="sausage">
+                                    <label for="sausage">Sausage</label>
+                                </li>
+                                <li class="meat_option">
+                                    <input type="checkbox" id="chicken" name="meats" value="chicken">
+                                    <label for="chicken">Chicken</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="veggies">
+                            <h3 id="title-veggie">Vegatables:</h3>
+                            <ul>
+                                <li class="vegg_option">
+                                    <input type="checkbox" id="mushrooms" name="veggies" value="mushrooms">
+                                    <label for="mushrooms">Mushrooms</label>
+                                </li>
+                                <li class="vegg_option">
+                                    <input type="checkbox" id="onion" name="veggies" value="onion">
+                                    <label for="onion">Onions</label>
+                                </li>
+                                <li class="vegg_option">
+                                    <input type="checkbox" id="spinach" name="veggies" value="spinach">
+                                    <label for="spinach">Spinach</label>
+                                </li>
+                                <li class="vegg_option">
+                                    <input type="checkbox" id="pineapple" name="veggies" value="pineapple">
+                                    <label for="pineapple">Pineapple</label>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr style="width: 90%; margin: 10px auto 10px auto;">
+                        <h2 id="step-three">Step 3: Special Instructions</h2>
+                        <textarea id="special-instructions" name="instructions"
+                            placeholder="Type any Special Instructions here:"></textarea>
+                </div>
 
-    </div>
-    </main>
-    
-    <footer id="main_footer" style="height: fit-content;">
-        <ul id="todo" style="margin-left: 15px;">
-            TODO List
-            <li style="text-decoration: line-through;">Take an item/pizza off of current order and have total cost recalculate</li>
-            <li>Add toppings to current order and/or recent orders</li>
-            <li>When a recent order is clicked, add all items to current order</li>
-            <li>Make more/better responsive</li>
-            <li>Add drinks and/or sides (update menu)</li>
-            <li style="text-decoration: line-through;">Show menu of prices</li>
-            <li style="text-decoration: line-through;">Add Special instructions area</li>
-            <li>Option for carryout or delivery</li>
-            <li>Add more toppings</li>
-        </ul>
-    </footer>
-    </body>
-    </article>
+                <div id="order">
+                    <div>
+                        <h3>Order:</h3>
+                        <ul id="order_list">
+                        </ul>
+                    </div>
+                    <div id="cost">
+                        0
+                    </div>
+                </div>
+                </form>
+
+                <div id="buttons">
+                    <input id="add_pizza" type="reset" value="Add Pizza">
+                    <input id="reset_order" type="reset" value="Reset Order">
+                    <input id="finish_order" type="submit" form="order_form" value="Finish Order">
+                </div>
+            </div>
+            
+            
+
+
+            <h2 id="recent_title">Recent Orders</h2>
+            <div id="recent_orders">
+
+            </div>
+        </main>
+
+        <footer id="main_footer" style="height: fit-content;">
+            <ul id="todo" style="margin-left: 15px;">
+                TODO List
+                <li style="text-decoration: line-through;">Take an item/pizza off of current order and have total cost
+                    recalculate</li>
+                <li>Add toppings to current order and/or recent orders</li>
+                <li>When a recent order is clicked, add all items to current order</li>
+                <li>Make more/better responsive</li>
+                <li>Add drinks and/or sides (update menu)</li>
+                <li style="text-decoration: line-through;">Show menu of prices</li>
+                <li style="text-decoration: line-through;">Add Special instructions area</li>
+                <li>Option for carryout or delivery</li>
+                <li>Add more toppings</li>
+            </ul>
+        </footer>
 </body>
+</article>
+</body>
+
 </html>

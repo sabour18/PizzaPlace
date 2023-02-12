@@ -106,20 +106,9 @@ nav{
     height: 2rem;
   }
 
-  #add_pizza{
-    display: grid;
-    margin: 5px;
-    align-self: center;
-    text-align: center;
-  }
-
-  #buttons{
-    margin-left: auto;
-    margin-right: auto;
-  }
-
+ 
   main{
-    width: 85%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -132,30 +121,23 @@ nav{
     box-shadow: 12px 10px 11px -4px rgba(0,0,0,0.75);
     -webkit-box-shadow: 12px 10px 11px -4px rgba(0,0,0,0.75);
     -moz-box-shadow: 12px 10px 11px -4px rgba(0,0,0,0.75);
-    padding: 3px;
     border-radius: 8px;
-    width: 85%;
+    width: 90%;
+    padding: 3px;
     display: flex;
-    margin: auto;
     flex-direction: row;
-  }
-
-  form{
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    border-right: 1px solid black;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 
   #recent_orders{
     margin: auto;
+    padding: 8px;
     width: 85%;
     margin-bottom: 15px;
   }
 
-  #recent_orders li{
-    
-  }
 
   #recent_title{
     margin-top: 20px;
@@ -163,22 +145,14 @@ nav{
   }
 
 
-  .order_label{
-    background-color: lightgrey;    
-    border:grey ridge 1px; 
-    display: flex;
-    flex-direction: row;
-    padding: 1px;
-    border-radius: 5px;
-    margin-top: 15px;
-    margin-right: 6px;
-  }
-
-  #recent_orders li li{
+  #recent_orders ul{
     display: flex;
     flex-direction: column;
     border: none;
     margin-top: 0;
+    border-radius: 6px;
+    border: 1px solid black;
+    background-color: rgb(185, 183, 183);
   }
   
 
@@ -186,11 +160,8 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex-grow: 1;
-  }
-
-  #order_list{
-    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 1px solid black;
   }
 
   #cost{
@@ -235,11 +206,43 @@ footer{
   }
 
   #menu h2{
-    width: 100%;
-    margin-left: 20px;
+    width: fit-content;
+    padding-left: 20px;
   }
 
   #menu_pizza{
     text-align: center;
     margin: auto;
   }
+
+  #buttons{
+    border-top: 0.5px solid black;
+    padding: 20px 0;
+    text-align: center;
+    flex-basis: 100%;
+  }
+
+@media only screen and (max-width: 700px){
+  main{
+    padding: 0;
+    margin: auto;
+    width: 99vw;
+  }
+
+  #menu{
+    border-radius: 0;
+    width: 99vw;
+  }
+#selection-menu{
+  width: 99vw;
+}
+  #main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #order{
+    border: 0;
+  }
+}
